@@ -78,3 +78,5 @@ export PATH=$HOME/.config/tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 if [ -e /home/dheater/.nix-profile/etc/profile.d/nix.sh ]; then . /home/dheater/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+eval "$(direnv hook zsh)"

@@ -62,9 +62,9 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs;[
-    alacritty
     antigen
     bat
+    direnv
     emacs
     exa
     fzf
@@ -108,4 +108,7 @@
   # zsh
   home.file.".zsh_plugins.txt".source = zsh/.zsh_plugins.txt;
   home.file.".zshrc".source = ./zsh/.zshrc;
+
+  # lorri
+  services.lorri.enable = true;
 }
