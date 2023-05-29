@@ -72,6 +72,7 @@
     jq
     nix
     openssh
+    ripgrep
     tmux
     unzip
     vim
