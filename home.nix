@@ -63,6 +63,7 @@
   # environment.
   home.packages = with pkgs;[
     alacritty
+    antigen
     bat
     emacs
     exa
@@ -94,4 +95,16 @@
       };
     };
   };
+
+  # bin
+  home.file.".config/bin".source = ./bin;
+
+  # config
+  home.file.".config/alacrity".source = .config/alacritty;
+  home.file.".config/helix".source = .config/helix;
+  home.file.".config/zellij".source = .config/zellij;
+
+  # zsh
+  home.file.".zsh_plugins.txt".source = zsh/.zsh_plugins.txt;
+  home.file.".zshrc".source = ./zsh/.zshrc;
 }
